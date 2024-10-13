@@ -1,1 +1,2 @@
 worker: python ms.py
+web: python ms.py
