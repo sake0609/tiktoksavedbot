@@ -1,0 +1,14 @@
+# Игнорировать системные файлы
+*.DAT
+*.ini
+*.log
+*.exe
+*.regtrans-ms
+*.blf
+NTUSER*
+AppData/
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
