@@ -1,0 +1,17 @@
+{
+  "name": "tiktoksavedbot",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "jest": "^27.0.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
