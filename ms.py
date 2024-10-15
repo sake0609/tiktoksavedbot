@@ -1,4 +1,6 @@
+import os
 import logging
+import psycopg2
 import telebot
 import instaloader
 from TikTokApi import TikTokApi
@@ -9,6 +11,10 @@ logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=lo
 # Задаем токен
 TOKEN = '7941402803:AAF0wiMrS2LhQ9gYnz_Vh8z7N59LxYED9EM'
 bot = telebot.TeleBot(TOKEN)
+
+# Подключение к базе данных
+DATABASE_URL = os.environ['DATABASE_URL']
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 @bot.message_handler(commands=['start'])
 def start(message):

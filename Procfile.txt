@@ -1,2 +1,3 @@
 worker: python ms.py
 web: python ms.py
+web: gunicorn tiktoksavedbot.wsgi --log-file -
