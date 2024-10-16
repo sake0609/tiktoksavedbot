@@ -10,7 +10,7 @@
     "jest": "^27.0.0"
   },
   "scripts": {
-    "test": "jest"
+    "start": "gunicorn tiktoksavedbot.wsgi:application --bind 0.0.0.0:$PORT"
   },
   "author": "",
   "license": "ISC"
